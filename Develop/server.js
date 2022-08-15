@@ -17,6 +17,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
 });
-// TO DO
-// put request to add json objects to db.json
-// get request to display contents of db.json within notes.html
+
