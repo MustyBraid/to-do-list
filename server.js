@@ -5,7 +5,7 @@ const app = express();
 const apiRoute = require('./routes/api.js')
 app.use('/api', apiRoute);
 
-const PORT = 3001;
+const PORT = 8080;
 
 app.use(express.static('public'));
 
