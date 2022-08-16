@@ -28,6 +28,7 @@ router.post('/notes', (req,res) => {
         console.log('Added a note!');
     })
     })
+    res.send();
 
 });
 
