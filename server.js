@@ -5,7 +5,9 @@ const app = express();
 const apiRoute = require('./routes/api.js')
 app.use('/api', apiRoute);
 
-const PORT = 5000;
+require('dotenv').config();
+const PORT = process.env.PORT;
+
 
 app.use(express.static('public'));
 
