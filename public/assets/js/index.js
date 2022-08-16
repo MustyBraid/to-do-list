@@ -25,11 +25,8 @@ const hide = (elem) => {
 
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
-//HERE ARE THE CALLS YOU'RE LOOKING FOR
 
-//AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHh
 
-//HERE
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',

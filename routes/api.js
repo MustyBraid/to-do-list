@@ -10,9 +10,9 @@ router.use(bodyParser.urlencoded({extended:false}));
 router.use(bodyParser.json());
 
 router.get('/notes', (req,res) => {
-    let notes = fs.readFileSync(database, {encoding:'utf8', flag:'r'})
-    //console.log(notes);
+    let notes = fs.readFileSync(database, {encoding:'utf8', flag:'r'});
     res.send(notes);
+    
 
 })
 
@@ -28,7 +28,7 @@ router.post('/notes', (req,res) => {
         console.log('Added a note!');
     })
     })
-    
+
 });
 
 router.delete('/notes', (req,res) => {
